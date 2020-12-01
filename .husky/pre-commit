@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname $0)/_/husky.sh"
+
+# Run tests
+npm test
+
+# Find and fix lint problems
+npm run lint:fix
+
+# Adds possible modifications caused by lint fixing into the commit
+git add .
