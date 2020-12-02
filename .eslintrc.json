@@ -16,6 +16,7 @@
     "sourceType": "module"
   },
   "plugins": [
+    "unused-imports",
     "prettier",
     "@typescript-eslint",
     "simple-import-sort"
