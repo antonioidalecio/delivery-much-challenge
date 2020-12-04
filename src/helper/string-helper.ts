@@ -2,7 +2,7 @@ export function commaDelimitedStringToStringArray(
   commaDelimitedString: string,
   parseOptions = { filterEmptyValues: true }
 ): string[] {
-  if (!commaDelimitedString.trim()) {
+  if (!commaDelimitedString?.trim()) {
     return []
   }
   return commaDelimitedString
