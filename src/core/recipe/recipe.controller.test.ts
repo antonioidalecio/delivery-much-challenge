@@ -17,7 +17,7 @@ jest.mock('./recipe.service', () => {
   }
 })
 
-describe('RecipeController - searchRecipesByIngredients', () => {
+describe('RecipeController - searchRecipes', () => {
   afterEach(() => {
     jest.resetAllMocks()
   })
