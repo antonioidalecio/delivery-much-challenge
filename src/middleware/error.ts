@@ -4,7 +4,7 @@ export const handleGenericErrors = (
   error: Error,
   req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ): void => {
   res.status(500).json({ message: error.message || 'Internal server error' })
 }

@@ -21,8 +21,18 @@
     "@typescript-eslint",
     "simple-import-sort"
   ],
-  "ignorePatterns": ["node_modules", "build"],
+  "ignorePatterns": [
+    "node_modules",
+    "build"
+  ],
   "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      2,
+      {
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "prettier/prettier": "error",
     "unused-imports/no-unused-imports": "error",
     "simple-import-sort/imports": "error",
