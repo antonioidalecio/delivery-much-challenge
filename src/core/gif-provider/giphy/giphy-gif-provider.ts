@@ -1,12 +1,13 @@
 import { GiphyFetch } from '@giphy/js-fetch-api'
 
+import { GIPHY_API_KEY } from '../../../config'
 import { Gif, IGifProvider, SearchGifOptions } from '..'
 
 export class GiphyGifProvider implements IGifProvider {
   private readonly giphyFetch: GiphyFetch
 
   public constructor() {
-    this.giphyFetch = new GiphyFetch(process.env.GIPHY_API_KEY || '')
+    this.giphyFetch = new GiphyFetch(GIPHY_API_KEY)
   }
 
   async searchGifs(

@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@giphy/js-fetch-api": "^2.0.0-alpha.0",
+    "axios": "^0.21.0",
     "cors": "^2.8.5",
+    "cross-fetch": "^3.0.6",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.7.0"
