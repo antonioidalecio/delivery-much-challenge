@@ -57,18 +57,13 @@ describe('GiphyGifProvider - searchGifs', () => {
 
   it('should parse response correctly', async () => {
     const term = 'my gif'
-    const options = {
-      limit: 1,
-      offset: 1,
-      lang: 'en',
-    }
 
     searchMock.mockResolvedValue(mockedGifs)
 
-    const gifs = await giphyGifProvider.searchGifs(term, options)
+    const gifs = await giphyGifProvider.searchGifs(term)
 
     expect(searchMock).toBeCalledTimes(1)
-    expect(searchMock).toBeCalledWith(term, options)
+    expect(searchMock).toBeCalledWith(term, { limit: 1, offset: 0, lang: 'pt' })
 
     expect(gifs).toHaveLength(2)
 

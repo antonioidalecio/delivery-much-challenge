@@ -1,5 +1,5 @@
 export function commaDelimitedStringToStringArray(
-  commaDelimitedString = '',
+  commaDelimitedString: string,
   parseOptions = { filterEmptyValues: true }
 ): string[] {
   if (!commaDelimitedString.trim()) {
