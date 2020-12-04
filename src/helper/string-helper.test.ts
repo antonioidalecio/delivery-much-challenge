@@ -13,6 +13,11 @@ describe('commaDelimitedStringToStringArray', () => {
     }
   })
 
+  it('should return empty array if provided string is undefined', () => {
+    const result = commaDelimitedStringToStringArray(undefined as never)
+    expect(result).toEqual([])
+  })
+
   it('should split values delimitted by comma and return corresponding list', () => {
     const result = commaDelimitedStringToStringArray('a,b, c')
     expect(result).toEqual(['a', 'b', 'c'])
