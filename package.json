@@ -11,7 +11,7 @@
     "lint:fix": "eslint --fix .",
     "test": "jest",
     "coverage": "jest --coverage",
-    "postinstall": "husky install"
+    "postinstall": "chmod +x ./postinstall.sh && ./postinstall.sh"
   },
   "dependencies": {
     "@giphy/js-fetch-api": "^2.0.0-alpha.0",
