@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "jest",
+    "coverage": "jest coverage .",
     "postinstall": "husky install"
   },
   "dependencies": {
